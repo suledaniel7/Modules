@@ -18,9 +18,8 @@ fs.readFile('./country_flags.json').then((val) => {
                     cArr.push({
                         "name": c.name,
                         "code": c.code,
-                        "unicode": c.unicode,
-                        "ext": ext.dial_code,
-                        "reg_match": "^\+{1}(\d){13,14}$|^(\d){11}$"
+                        "uri": c.image,
+                        "ext": ext.dial_code
                     });
                 }
             });
