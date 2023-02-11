@@ -1,0 +1,14 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "description": "Private JS Modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Sule",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
