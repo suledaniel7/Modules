@@ -7,7 +7,7 @@ function decoder(encoded) {
         let g_chars = [];
         let g_charTxt = '';
 
-        fs.readFile(__dirname + `\\chars.txt`, (err, data) => {
+        fs.readFile(__dirname + `/chars.txt`, (err, data) => {
             if (err) {
                 reject(err);
             }
@@ -17,7 +17,7 @@ function decoder(encoded) {
                 chars = charTxt.split("");
                 let tmp_chars = chars.slice(53);
 
-                fs.readFile(__dirname + `\\global_chars.txt`, (err, g_data) => {
+                fs.readFile(__dirname + `/global_chars.txt`, (err, g_data) => {
                     if (err) {
                         reject(err);
                     }

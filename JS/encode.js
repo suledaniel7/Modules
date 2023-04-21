@@ -9,7 +9,7 @@ function encoder(plainText){
         let nums = [];
         let numTxt = '';
         
-        fs.readFile(__dirname+`\\chars.txt`, (err, data)=>{
+        fs.readFile(__dirname+`/chars.txt`, (err, data)=>{
             if(err){
                 reject(err);
             }
@@ -18,7 +18,7 @@ function encoder(plainText){
                 
                 chars = charTxt.split("");
                 
-                fs.readFile(__dirname+`\\global_chars.txt`, (err, g_data)=>{
+                fs.readFile(__dirname+`/global_chars.txt`, (err, g_data)=>{
                     if(err){
                         reject(err);
                     }
@@ -27,7 +27,7 @@ function encoder(plainText){
         
                         g_chars = g_charTxt.split("");
         
-                        fs.readFile(__dirname+`\\nums.txt`, (err, num_data)=>{
+                        fs.readFile(__dirname+`/nums.txt`, (err, num_data)=>{
                             if(err){
                                 reject(err);
                             }
